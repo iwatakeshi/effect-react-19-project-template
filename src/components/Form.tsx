@@ -11,8 +11,8 @@ const program = Effect.gen(function* () {
 });
 
 export default function Form() {
-  const [_, action] = useActionState(
-    (_: unknown, payload: globalThis.FormData) =>
+  const [_, action] = useActionState<unknown, globalThis.FormData>(
+    (_, payload) =>
       RuntimeClient.runPromise(
         program.pipe(Effect.provideService(FormData, payload))
       ),
