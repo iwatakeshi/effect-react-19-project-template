@@ -1,4 +1,4 @@
-import { Schema } from "@effect/schema";
+import { Schema } from "effect";
 
 export class Post extends Schema.Class<Post>("Post")({
   userId: Schema.Number,

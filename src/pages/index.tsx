@@ -1,5 +1,4 @@
-import { Schema } from "@effect/schema";
-import { Effect, Match } from "effect";
+import { Effect, Match, Schema } from "effect";
 import Form from "../components/Form";
 import Location from "../components/Location";
 import Posts from "../components/Posts";
